@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF909090"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/img_avatar"
+        android:text="@string/name"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_name"
+        android:layout_toEndOf="@id/img_avatar"
+        android:text="@string/username"/>
+
+    <TextView
+        android:id="@+id/tv_repo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_username"
+        android:layout_toEndOf="@id/img_avatar"
+        android:textSize="10sp"
+        android:text="@string/repo"/>
+
+    <TextView
+        android:id="@+id/tv_repository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_username"
+        android:layout_toEndOf="@id/tv_repo"
+        android:textSize="10sp"
+        android:text="@string/repository"/>
+
+    <TextView
+        android:id="@+id/tv_flwrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_repo"
+        android:layout_toEndOf="@id/img_avatar"
+        android:textSize="10sp"
+        android:text="@string/flwrs"/>
+
+    <TextView
+        android:id="@+id/tv_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_repo"
+        android:layout_toEndOf="@id/tv_flwrs"
+        android:textSize="10sp"
+        android:text="@string/followers"/>
+
+    <TextView
+        android:id="@+id/tv_flwng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_repo"
+        android:layout_toEndOf="@id/tv_followers"
+        android:textSize="10sp"
+        android:text="@string/flwng"/>
+
+    <TextView
+        android:id="@+id/tv_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_repo"
+        android:layout_toEndOf="@id/tv_flwng"
+        android:textSize="10sp"
+        android:text="@string/following"/>
+
+</RelativeLayout>
